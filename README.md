@@ -25,7 +25,6 @@ func InitRouters() *gin.Engine {
 	router.GET("/openapi.json", func(c *gin.Context) {
 		c.Data(200, "application/json", []byte(`[
 			{
-				"name": "doc",
 				"url": "/doc.json",
 				"swaggerVersion": "2.0"
 			}
@@ -35,4 +34,11 @@ func InitRouters() *gin.Engine {
 }
 ```
 
-## 
+## Disclaimer
+Public welfare projects.
+The disclaimer asserts that the company won't be held responsible for any.
+
+# Links
+- gin-swagger: https://github.com/swaggo/gin-swagger
+- knife4j: https://github.com/xiaoymin/knife4j
+- swag: https://github.com/swaggo/swag/cmd/swag
