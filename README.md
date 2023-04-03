@@ -2,7 +2,7 @@
 simply Assembled knife4j + gin-swagger, it means an enhanced version of gin-swagger, Leading  to a beautiful UI.
 
 # go get
-`go get -u github.com/go-webtools/knife4go`
+`go get github.com/go-webtools/knife4go`
 
 ## usage
 Based on the usage of gin-swagger, add sth as follows:
