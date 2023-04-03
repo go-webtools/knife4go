@@ -36,7 +36,7 @@ func InitRouters() *gin.Engine {
 
 ## Disclaimer
 Public welfare projects.
-The disclaimer asserts that the company won't be held responsible for any.
+The disclaimer asserts that the individual won't be held responsible for any.
 
 # Links
 - gin-swagger: https://github.com/swaggo/gin-swagger
