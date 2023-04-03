@@ -1,0 +1,22 @@
+package knife4go
+import (
+	"os"
+)
+
+func init() {
+
+	f, err := FS.OpenFile(CTX, "/chunk-0b510f4b.a9ffbfcb.css", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0777)
+	if err != nil {
+		panic(err)
+	}
+
+	_, err = f.Write([] byte(base64Decoding("LmFwaS10YWJbZGF0YS12LTNlMWVjOTk0XXttYXJnaW4tdG9wOjE1cHh9LmFwaS10YWIgLmFudC10YWdbZGF0YS12LTNlMWVjOTk0XXtoZWlnaHQ6MzJweDtsaW5lLWhlaWdodDozMnB4fS5hcGktYmFzaWNbZGF0YS12LTNlMWVjOTk0XXtwYWRkaW5nOjExcHh9LmFwaS1iYXNpYy10aXRsZVtkYXRhLXYtM2UxZWM5OTRde2ZvbnQtc2l6ZToxNHB4O2ZvbnQtd2VpZ2h0OjcwMH0uYXBpLWJhc2ljLWJvZHlbZGF0YS12LTNlMWVjOTk0XXtmb250LXNpemU6MTRweDtmb250LWZhbWlseTotd2Via2l0LWJvZHl9LmFwaS1kZXNjcmlwdGlvbltkYXRhLXYtM2UxZWM5OTRde2JvcmRlci1sZWZ0OjRweCBzb2xpZCAjZGRkO2xpbmUtaGVpZ2h0OjMwcHh9LmFwaS1ib2R5LWRlc2NbZGF0YS12LTNlMWVjOTk0XXtwYWRkaW5nOjEwcHg7bWluLWhlaWdodDozNXB4Oy13ZWJraXQtYm94LXNpemluZzpib3JkZXItYm94O2JveC1zaXppbmc6Ym9yZGVyLWJveDtib3JkZXI6MXB4IHNvbGlkICNlOGU4ZTh9LmFudC1jYXJkLWJvZHlbZGF0YS12LTNlMWVjOTk0XXtwYWRkaW5nOjVweH0uYXBpLXRpdGxlW2RhdGEtdi0zZTFlYzk5NF17bWFyZ2luLXRvcDoxMHB4O21hcmdpbi1ib3R0b206NXB4O2ZvbnQtc2l6ZToxNnB4O2ZvbnQtd2VpZ2h0OjYwMDtoZWlnaHQ6MzBweDtsaW5lLWhlaWdodDozMHB4O2JvcmRlci1sZWZ0OjRweCBzb2xpZCAjMDBhYjZkO3RleHQtaW5kZW50OjhweH0uY29udGVudC1saW5lW2RhdGEtdi0zZTFlYzk5NF17aGVpZ2h0OjI1cHg7bGluZS1oZWlnaHQ6MjVweH0uY29udGVudC1saW5lLWNvdW50W2RhdGEtdi0zZTFlYzk5NF17aGVpZ2h0OjM1cHg7bGluZS1oZWlnaHQ6MzVweH0uZGl2aWRlcltkYXRhLXYtM2UxZWM5OTRde21hcmdpbjo0cHggMH0=")))
+	if err != nil {
+		panic(err)
+	}
+
+	err = f.Close()
+	if err != nil {
+		panic(err)
+	}
+}
