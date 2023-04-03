@@ -21,11 +21,11 @@ func InitRouters() *gin.Engine {
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	// knife4go: beautify swagger-ui
 	router.GET("/knife4go/*any", knife4goGin.WrapHandler(knife4goFiles.Handler))
-	// knife4go: config openapi  info
+	// knife4go: config openapi info, modify this port 
 	router.GET("/openapi.json", func(c *gin.Context) {
 		c.Data(200, "application/json", []byte(`[
 			{
-				"url": "/doc.json",
+				"url": "/swagger/doc.json",
 				"swaggerVersion": "2.0"
 			}
 		]`))
