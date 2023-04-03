@@ -1,4 +1,4 @@
-module knife4go
+module github.com/go-webtools/knife4go
 
 go 1.20
 
