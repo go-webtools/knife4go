@@ -16,7 +16,7 @@ import (
 )
 
 func InitRouters() *gin.Engine {
-    router := gin.Default()
+    	router := gin.Default()
 	// swagger base router
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	// knife4go: beautify swagger-ui
