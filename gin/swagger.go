@@ -152,9 +152,7 @@ func CustomWrapHandler(config *Config, handler *webdav.Handler) gin.HandlerFunc 
 			return
 		}
 
-		// log.Println("reqUrl", ctx.Request.RequestURI)
-
-		// 处理doc.json
+		// handle doc.json
 		if strings.Contains(ctx.Request.RequestURI, "doc.json") {
 			doc, err := swag.ReadDoc(config.InstanceName)
 			if err != nil {
@@ -164,9 +162,6 @@ func CustomWrapHandler(config *Config, handler *webdav.Handler) gin.HandlerFunc 
 			ctx.String(http.StatusOK, doc)
 			return
 		}
-
-		// log.Println("后面还执行么", ctx.Request.RequestURI)
-
 		matches := matcher.FindStringSubmatch(ctx.Request.RequestURI)
 
 		if len(matches) != 3 {
