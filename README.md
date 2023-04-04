@@ -1,5 +1,7 @@
 # knife4go
-simply Assembled knife4j + gin-swagger, it means an enhanced version of gin-swagger with a nice UI.
+simply Assembled knife4j + gin-swagger, it means an enhanced version of gin-swagger with a nice UI.  
+
+work well on go1.18+
 
 # go get
 `go get github.com/go-webtools/knife4go`
