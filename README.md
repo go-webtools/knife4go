@@ -35,7 +35,7 @@ func InitRouters() *gin.Engine {
 ```
 
 ## Disclaimer
-Public welfare projects.
+Public welfare projects.  
 The disclaimer asserts that the individual won't be held responsible for any.
 
 # Links
