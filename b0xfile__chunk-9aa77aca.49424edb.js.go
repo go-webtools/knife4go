@@ -5,7 +5,7 @@ import (
 
 func init() {
 
-	f, err := FS.OpenFile(CTX, "/chunk-9aa77aca.78ecc6b7.js", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0777)
+	f, err := FS.OpenFile(CTX, "/chunk-9aa77aca.49424edb.js", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0777)
 	if err != nil {
 		panic(err)
 	}

@@ -1,5 +1,4 @@
 package knife4go
-
 import (
 	"os"
 )
@@ -11,7 +10,7 @@ func init() {
 		panic(err)
 	}
 
-	_, err = f.Write([]byte(base64Decoding("WwogICAgewogICAgICAgICJuYW1lIjogIktuaWZlNGrnpLrkvosiLAogICAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3N3YWdnZXIvZG9jLmpzb24iLAogICAgICAgICJzd2FnZ2VyVmVyc2lvbiI6ICIyLjAiCiAgICB9Cl0=")))
+	_, err = f.Write([] byte(base64Decoding("WwogICAgewogICAgICAgICJuYW1lIjogIktuaWZlNGdvIiwKICAgICAgICAidXJsIjogImtuaWZlNGdvL2RvYy5qc29uIiwKICAgICAgICAic3dhZ2dlclZlcnNpb24iOiAiMi4wIgogICAgfQpd")))
 	if err != nil {
 		panic(err)
 	}
