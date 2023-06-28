@@ -1,5 +1,5 @@
 # knife4go
-simply Assembled knife4j + gin-swagger, it means an enhanced version of gin-swagger with a nice UI.  
+simply Assembled knife4j + gin-swagger, it means an enhanced version of gin-swagger with nice UI.  
 
 work well on go1.18+
 
@@ -23,15 +23,6 @@ func InitRouters() *gin.Engine {
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	// knife4go: beautify swagger-ui
 	router.GET("/knife4go/*any", knife4goGin.WrapHandler(knife4goFiles.Handler))
-	// knife4go: config openapi info
-	router.GET("/openapi.json", func(c *gin.Context) {
-		c.Data(200, "application/json", []byte(`[
-			{
-				"url": "/swagger/doc.json",
-				"swaggerVersion": "2.0"
-			}
-		]`))
-	})
     ...
 }
 ```
@@ -39,6 +30,7 @@ func InitRouters() *gin.Engine {
 ## Disclaimer
 Public welfare projects.  
 The disclaimer asserts that the individual won't be held responsible for any.
+[LICENSE](./LICENSE)
 
 # Links
 - gin-swagger: https://github.com/swaggo/gin-swagger
