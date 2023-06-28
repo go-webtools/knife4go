@@ -251,7 +251,7 @@ const swaggerIndexTpl = `<!-- HTML for static distribution bundle build -->
     <link href="./chunk-589faee0.d56965ec.js" rel="prefetch">
     <link href="./chunk-735c675c.d8905482.js" rel="prefetch">
     <link href="./chunk-845d989c.7d4dfe1a.js" rel="prefetch">
-    <link href="./chunk-9aa77aca.78ecc6b7.js" rel="prefetch">
+    <link href="./chunk-9aa77aca.49424edb.js" rel="prefetch">
     <link href="./chunk-adb9e944.a3f9d0d8.js" rel="prefetch">
     <link href="./chunk-vendors.f24a310a.css" rel="preload" as="style">
     <link href="./main.a93a5ea8.css" rel="preload" as="style">
