@@ -30,6 +30,8 @@ func InitRouters() *gin.Engine {
 ## Disclaimer
 Public welfare projects.  
 The disclaimer asserts that the individual won't be held responsible for any.
+
+## MIT LICENSE
 [LICENSE](./LICENSE)
 
 # Links
